@@ -65,7 +65,15 @@
 
                 if(isset($_GET["q"])){
                     $get = file_get_contents("https://apibay.org/q.php?q=".urlencode($_GET["q"])."&cat=");
+                    $top100all = file_get_contents("https://apibay.org/precompiled/data_top100_all.json");
+                    $top100all48 = file_get_contents("https://apibay.org/precompiled/data_top100_48h.json");
                     $json = json_decode($get, true);
+                    if($_GET["q"] === "top100:all"){
+                        $json = json_decode($top100all, true);
+                    }
+                    if($_GET["q"] === "top100:48"){
+                        $json = json_decode($top100all48, true);
+                    }
                     foreach($json as $curr){
                         $epoch = $curr["added"];
                         $dt = new DateTime("@$epoch");
@@ -73,7 +81,7 @@
                         echo "<tr>";
                         echo "<td><a href='d.php?id=".$curr["id"]."'>".$curr["name"]."</td>";
                         echo "<td>".$ds."</td>";
-                        echo "<td>Not available</td>";
+                        echo "<td><img src='icon-magnet.gif' /></td>";
                         echo "<td>".formatBytes($curr["size"]). " (".$curr["size"]." bytes)</td>";
                         echo "<td>".$curr["seeders"]."</td>";
                         echo "<td>".$curr["leechers"]."</td>";

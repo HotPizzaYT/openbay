@@ -39,7 +39,7 @@
 	<center>
         <h1>OpenBay</h1>
         <p style="color: #808080">A pirate's best friend</p>
-        <p><b>Search Torrents</b> | <a href="browse.php">Browse Torrents</a> | <a href="search.php?q=top100:recent">Recent Torrents</a>
+        <p><b>Search Torrents</b> | <a href="search.php?q=top100:all">All Top 100</a> | <a href="search.php?q=top100:48">Top 100 in 48h</a>
         <form action="search.php">
             <input type="text" name="q"> <input type="submit" value="Search">
         </form>
