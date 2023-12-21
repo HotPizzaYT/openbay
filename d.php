@@ -38,8 +38,8 @@
 <body>
 	<h1>OpenBay</h1>
     <form action="search.php">
-            <input type="text" name="q"> <input type="submit" value="Search">
-    </form> <a href="index.php">Go back</a>
+            <input type="text" name="q"> <input type="submit" value="Search"> <a href="index.php">Go back</a>
+    </form> 
     <p>
         <?php
         $name = "Not found";
