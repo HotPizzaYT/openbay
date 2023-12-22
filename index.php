@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 	<meta http-equiv="X-UA-Compatible" content="chrome=1, IE=edge">
-	<title>pirate.based - home</title>
+	<title><?php echo file_get_contents("sitename.txt"); ?> - home</title>
 
 	<style type="text/css">
 	html, body {
@@ -40,6 +40,8 @@
     .rainbow {
 		animation: rainbow 16s linear;
 		animation-iteration-count: infinite;
+        font-family: monospace;
+        font-size: 64px;
     }
     @keyframes rainbow {
 		100%,0%{
@@ -88,8 +90,8 @@
 </head>
 <body>
 	<center>
-        <h1 class="rainbow">pirate.based</h1>
-        <p style="color: #808080">A pirate's best friend</p>
+        <h1 class="rainbow"><?php echo file_get_contents("sitename.txt"); ?></h1>
+        <p style="color: #808080"><?php echo file_get_contents("subtext.txt"); ?></p>
         <p><b>Search Torrents</b> | <a href="search.php?q=top100:all">All Top 100</a> | <a href="search.php?q=top100:48">Top 100 in 48h</a>
         <form action="search.php">
             <input type="text" name="q"> <input type="submit" value="Search">

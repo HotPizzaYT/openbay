@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 	<meta http-equiv="X-UA-Compatible" content="chrome=1, IE=edge">
-	<title>pirate.based</title>
+	<title><?php echo file_get_contents("sitename.txt"); ?></title>
 
 	<style type="text/css">
 	html, body {
@@ -28,10 +28,19 @@
 		-ms-user-select: none;
 		user-select: none;
 	}
-
+    a:link {
+        color: #00ffff;
+    }
+    a:visited {
+        color: #ff00ff;
+    }
+    a:active {
+        color: #ffff00;
+    }
     .rainbow {
-		animation: rainbow 2.5s linear;
+		animation: rainbow 16s linear;
 		animation-iteration-count: infinite;
+        font-family: monospace;
     }
     @keyframes rainbow {
 		100%,0%{
@@ -79,7 +88,7 @@
 	</script>
 </head>
 <body>
-	<h1 class="rainbow">pirate.based</h1>
+	<h1 class="rainbow"><?php echo file_get_contents("sitename.txt"); ?></h1>
     <form action="search.php">
             <input type="text" name="q"> <input type="submit" value="Search"> <a href="index.php">Go back</a>
     </form> 
