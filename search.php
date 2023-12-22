@@ -28,8 +28,17 @@
 		-ms-user-select: none;
 		user-select: none;
 	}
+    a:link {
+        color: #00ffff;
+    }
+    a:visited {
+        color: #ff00ff;
+    }
+    a:active {
+        color: #ffff00;
+    }
     .rainbow {
-		animation: rainbow 2.5s linear;
+		animation: rainbow 16s linear;
 		animation-iteration-count: infinite;
     }
     @keyframes rainbow {

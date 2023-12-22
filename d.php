@@ -155,6 +155,8 @@
             <p><b>Leechers:</b> <?php echo $le; ?></p>
             <p><b>Info hash:</b> <?php echo $infohash; ?></p>
             <br />
+            <!-- It's okay to block this with an adblocker, I don't care. It's more of a recommendation than an ad. -->
+            <p><span style="color: #ff0000"><b>It is <i>highly</i> recommended that you use a VPN while downloading this file <u>unless you are on public WiFi or on mobile data.</u> <span id="vpnad" class="vpnad ad advertisement">You can find a privacy focused VPN at <a href="https://mullvad.net/">Mullvad</a>. Prices start at ~USD$5.50 / €5.00 a month. pirate.based is not affiliated with Mullvad in any way.</span></b></span></p>
             <a href="magnet:?xt=urn:btih:<?php echo $infohash; ?>&dn=<?php echo urlencode($name); ?>&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A6969%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopentracker.i2p.rocks%3A6969%2Fannounce">Download this torrent</a>
             <p>
                 <textarea readonly style="width: 100%; height: 100vh;"><?php echo $desc; ?></textarea>
