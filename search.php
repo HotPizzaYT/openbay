@@ -7,10 +7,12 @@
 	<title><?php echo file_get_contents("sitename.txt"); ?></title>
 
 	<style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
 	html, body {
 		height: 100%;
         background-color: #2a2a2a;
         color: #fff;
+        font-family: 'Cabin', sans-serif;
 	}
         body {
 		margin: 0;
