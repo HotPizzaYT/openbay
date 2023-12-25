@@ -1,0 +1,27 @@
+{
+    "id": 0,
+    "category": 0,
+    "status": "member",
+    "name": "Sample Torrent",
+    "num_files": 9,
+    "size": 0,
+    "seeders": 70,
+    "leechers": 0,
+    "username": "rjaa",
+    "added": 0,
+    "descr": "This is a sample torrent",
+    "imdb": null,
+    "language": null,
+    "textlanguage": null,
+    "info_hash": "no",
+    "files": [
+        {
+          "name": [
+            "sample.txt"
+          ],
+          "size": [
+            0
+          ]
+        }
+      ]
+  }
