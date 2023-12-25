@@ -8,6 +8,6 @@ Open `sitename.txt` and change the contents
 
 Same as above but with `subtext.txt`
 
-## How do I change the api
+## How do I change the API?
 
-A custom open source API is currently in the works.
+A custom open source API is available in this repository. Please redirect requests from apibay.org to your website. The files `q.php`, `f.php`, and `t.php` should act as an unofficial clone of the apibay.org API.
