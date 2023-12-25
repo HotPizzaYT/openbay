@@ -132,6 +132,8 @@ $ismobile = preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry
                 
 
                 if(isset($_GET["q"])){
+                    // $getapi = file_get_contents("http://localhost/pbay/q.php?q=".urlencode($_GET["q"])."&cat=");
+                    // echo $getapi;
                     $get = file_get_contents("https://apibay.org/q.php?q=".urlencode($_GET["q"])."&cat=");
                     $top100all = file_get_contents("https://apibay.org/precompiled/data_top100_all.json");
                     $top100all48 = file_get_contents("https://apibay.org/precompiled/data_top100_48h.json");
